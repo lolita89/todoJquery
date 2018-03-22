@@ -104,6 +104,13 @@
   </div>
 
   <script>
+
+  function toggleDone() {
+  var checkbox = this;
+
+  $(checkbox).parent().toggleClass("completed");
+}
+
   $("#total-count").html($(".todo").length);
 
   function updateCounters() {
